@@ -56,7 +56,7 @@ main :: IO ()
 main = putStrLn "Test suite not yet implemented"
 
 {-# START_FILE src/Lib.hs #-}
-module Lib wher
+module Lib where
 
 {-# START_FILE app/Main.hs #-}
 module Main where
