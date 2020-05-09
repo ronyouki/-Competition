@@ -71,6 +71,11 @@ main = do
     n <- fst . fromJust <$> ( BS.readInt <$> BS.getLine ) :: IO Int
     as <- replicateM n $ fst . fromJust <$> ( BS.readInt <$> BS.getLine ) :: IO [Int]
     [n,q] <- map (fst.fromJust.BS.readInt).BS.words <$> BS.getLine
+    
+readInt :: BS.ByteString -> Maybe (Int,BS.ByteString)
+readInt xs = do
+    (x,ys) <- BS.readInt xs
+    return (x,BS.tail ys)
 
 {-# START_FILE LICENSE #-}
 Copyright {{author-name}}{{^author-name}}Author name here{{/author-name}} (c) {{year}}{{^year}}2016{{/year}}
