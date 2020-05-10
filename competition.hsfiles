@@ -22,7 +22,11 @@ description:         Please see the README on GitHub at <https://github.com/{{gi
 
 dependencies:
 - base >= 4.7 && < 5
-
+- bytestring
+- array
+- vector
+- unboxing-vector
+    
 library:
   source-dirs: src
 
