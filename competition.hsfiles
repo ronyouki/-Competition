@@ -71,6 +71,14 @@ main = putStrLn "Test suite not yet implemented"
 {-# START_FILE src/Lib.hs #-}
 module Lib where
 
+{-# START_FILE README.md #-}
+# {{name}}
+
+{-# START_FILE ChangeLog.md #-}
+# Changelog for {{name}}
+
+## Unreleased changes
+
 {-# START_FILE app/Main.hs #-}
 module Main where
 
