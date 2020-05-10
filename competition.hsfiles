@@ -22,6 +22,7 @@ library
                      , bytestring
                      , array
                      , vector
+                     , unboxing-vector
   default-language:    Haskell2010
 
 executable {{name}}-exe
@@ -33,6 +34,7 @@ executable {{name}}-exe
                      , bytestring
                      , array
                      , vector
+                     , unboxing-vector
   default-language:    Haskell2010
   default-language:    Haskell2010
 
