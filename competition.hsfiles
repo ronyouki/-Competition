@@ -88,6 +88,9 @@ main = do
     [n,q] <- map (fst.fromJust.BS.readInt).BS.words <$> BS.getLine
     css <- VU.concat <$> (replicateM h $ VU.unfoldrN w BS.uncons <$> BS.getLine)
     as <- replicateM n $ map (fst.fromJust.BS.readInt).BS.words <$> BS.getLine :: IO[[Int]]
+    
+-- powerset :: [a] -> [[a]]
+-- powerset = filterM (const [True, False])
 
 {-# START_FILE LICENSE #-}
 Copyright {{author-name}}{{^author-name}}Author name here{{/author-name}} (c) {{year}}{{^year}}2016{{/year}}
