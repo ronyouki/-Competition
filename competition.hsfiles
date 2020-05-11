@@ -81,27 +81,40 @@ module Lib where
 
 {-# START_FILE app/Main.hs #-}
 module Main where
+-- import qualified Data.Vector                   as V
+-- import qualified Data.Vector.Mutable           as VM
+-- import qualified Data.Vector.Unboxed           as U
+-- import qualified Data.Foldable                 as F
+-- import Data.Ord
+-- import Data.Maybe
 
-import qualified Data.Vector.Unboxed as VU
-import qualified Data.Vector.Unboxed.Mutable as VUM
 import qualified Data.ByteString.Char8 as BS
-import Data.Maybe
 import Control.Monad
 import Data.List
-import Data.Ord
 
 main :: IO ()
 main = do
-    n <- fst . fromJust <$> ( BS.readInt <$> BS.getLine ) :: IO Int
-    as <- replicateM n $ fst . fromJust <$> ( BS.readInt <$> BS.getLine ) :: IO [Int]
-    [n,q] <- map (fst.fromJust.BS.readInt).BS.words <$> BS.getLine
-    css <- VU.concat <$> (replicateM h $ VU.unfoldrN w BS.uncons <$> BS.getLine)
-    as <- replicateM n $ map (fst.fromJust.BS.readInt).BS.words <$> BS.getLine :: IO[[Int]]
     
+    
+-------------------------------------------------------------------
+-- Util
+------------------------------------------------------------------
+
+-- ## IO ##
+-- n <- fst . fromJust <$> ( BS.readInt <$> BS.getLine ) :: IO Int
+-- [n,q] <- map (fst.fromJust.BS.readInt).BS.words <$> BS.getLine
+-- as <- replicateM n $ fst . fromJust <$> ( BS.readInt <$> BS.getLine ) :: IO [Int]
+-- ass <- replicateM n $ map (fst.fromJust.BS.readInt).BS.words <$> BS.getLine :: IO[[Int]]
+-- ass <- V.replicateM n $ do
+        --U.unfoldrN (m+1) (runParser int) <$> C.getLine
+-- css <- VU.concat <$> (replicateM h $ VU.unfoldrN w BS.uncons <$> BS.getLine)
+
+-- ## powerset ##
 -- powerset :: [a] -> [[a]]
 -- powerset = filterM (const [True, False])
 
---　sortBy (comparing Down)
+-- ## Descending sort ##
+-- sortBy (comparing Down)
 
 {-# START_FILE LICENSE #-}
 Copyright {{author-name}}{{^author-name}}Author name here{{/author-name}} (c) {{year}}{{^year}}2016{{/year}}
