@@ -100,7 +100,7 @@ main = do
 -- Util
 ------------------------------------------------------------------
 
--- ## IO ##
+-- IO
 -- n <- fst . fromJust <$> ( BS.readInt <$> BS.getLine ) :: IO Int
 -- [n,q] <- map (fst.fromJust.BS.readInt).BS.words <$> BS.getLine
 -- as <- replicateM n $ fst . fromJust <$> ( BS.readInt <$> BS.getLine ) :: IO [Int]
@@ -109,11 +109,11 @@ main = do
         --U.unfoldrN (m+1) (runParser int) <$> C.getLine
 -- css <- VU.concat <$> (replicateM h $ VU.unfoldrN w BS.uncons <$> BS.getLine)
 
--- ## powerset ##
+-- powerset
 -- powerset :: [a] -> [[a]]
 -- powerset = filterM (const [True, False])
 
--- ## Descending sort ##
+-- Descending sort 
 -- sortBy (comparing Down)
 
 {-# START_FILE LICENSE #-}
