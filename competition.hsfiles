@@ -128,6 +128,9 @@ main = do
 -- indexStartZero :: Int -> Int
 -- indexStartZero = subtract 1 
 
+-- let readInt = fmap (second B.tail) . B.readInt
+-- (a,b) <- (\vec -> (vec VU.! 0, vec VU.! 1)) . VU.unfoldrN 2 readInt <$> B.getLine
+
 {-# START_FILE LICENSE #-}
 Copyright {{author-name}}{{^author-name}}Author name here{{/author-name}} (c) {{year}}{{^year}}2016{{/year}}
 
