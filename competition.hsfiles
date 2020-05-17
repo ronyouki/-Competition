@@ -125,8 +125,8 @@ main = do
 -- sortBy (comparing Down)
 
 -- Converter
-indexStartZero :: Int -> Int
-indexStartZero = subtract 1 
+-- indexStartZero :: Int -> Int
+-- indexStartZero = subtract 1 
 
 {-# START_FILE LICENSE #-}
 Copyright {{author-name}}{{^author-name}}Author name here{{/author-name}} (c) {{year}}{{^year}}2016{{/year}}
