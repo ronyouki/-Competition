@@ -113,6 +113,7 @@ main = do
 -- as <- replicateM n $ fst . fromJust <$> ( BS.readInt <$> BS.getLine ) :: IO [Int]
 -- ass <- replicateM n $ map (fst.fromJust.BS.readInt).BS.words <$> BS.getLine :: IO[[Int]]
 -- css <- VU.concat <$> (replicateM h $ VU.unfoldrN w BS.uncons <$> BS.getLine)
+-- xs <- BS.getLine >>= return . VU.unfoldrN n (BC.readInt . BC.dropWhile isSpac)
 
 -- Creation a mutable table
 -- table <- VUM.replicate n 0 :: IO (VUM.IOVector Int)
