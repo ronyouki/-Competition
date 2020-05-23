@@ -95,9 +95,9 @@ import qualified Data.Vector.Unboxed.Mutable   as VUM
 import qualified Data.ByteString.Char8 as BS
 import Control.Monad
 import Data.List
--- import Data.Maybe
--- import Data.Char
--- import Data.Ord
+import Data.Maybe
+import Data.Char
+import Data.Ord
 
 main :: IO ()
 main = do
