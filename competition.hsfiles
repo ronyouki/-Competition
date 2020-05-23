@@ -132,6 +132,13 @@ main = do
 -- let readInt = fmap (second B.tail) . B.readInt
 -- (a,b) <- (\vec -> (vec VU.! 0, vec VU.! 1)) . VU.unfoldrN 2 readInt <$> B.getLine
 
+-- foo a b c = let x = f + g
+--                y = f - g
+--            in x + y
+--  where
+--    f = a + b
+--    g = b + c
+
 {-# START_FILE LICENSE #-}
 Copyright {{author-name}}{{^author-name}}Author name here{{/author-name}} (c) {{year}}{{^year}}2016{{/year}}
 
