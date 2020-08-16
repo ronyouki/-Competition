@@ -98,6 +98,11 @@ import Data.List
 import Data.Maybe
 import Data.Char
 import Data.Ord
+ 
+readInt = fst . fromJust . BS.readInt
+readIntList = map readInt . BS.words
+getInt = readInt <$> BS.getLine
+getIntList = readIntList <$> BS.getLine
 
 main :: IO ()
 main = do
